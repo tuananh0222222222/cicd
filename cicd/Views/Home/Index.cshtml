@@ -1,5 +1,89 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng dữ liệu với Bootstrap</title>
+    <!-- Liên kết Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="mb-3">Danh sách sản phẩm</h2>
 
-<h1>Tuan anh</h1>
+        <table class="table table-striped table-hover table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Tên sản phẩm</th>
+                    <th scope="col">Loại</th>
+                    <th scope="col">Giá</th>
+                    <th scope="col">Số lượng</th>
+                    <th scope="col">Trạng thái</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>iPhone 15 Pro</td>
+                    <td>Điện thoại</td>
+                    <td>25.990.000đ</td>
+                    <td>50</td>
+                    <td><span class="badge bg-success">Còn hàng</span></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>MacBook Air M2</td>
+                    <td>Laptop</td>
+                    <td>28.990.000đ</td>
+                    <td>25</td>
+                    <td><span class="badge bg-success">Còn hàng</span></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>AirPods Pro 2</td>
+                    <td>Phụ kiện</td>
+                    <td>6.990.000đ</td>
+                    <td>0</td>
+                    <td><span class="badge bg-danger">Hết hàng</span></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>iPad Pro 11"</td>
+                    <td>Máy tính bảng</td>
+                    <td>21.990.000đ</td>
+                    <td>15</td>
+                    <td><span class="badge bg-warning text-dark">Sắp hết</span></td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Apple Watch Series 9</td>
+                    <td>Đồng hồ</td>
+                    <td>12.990.000đ</td>
+                    <td>30</td>
+                    <td><span class="badge bg-success">Còn hàng</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="d-flex justify-content-between mt-3">
+            <div class="text-muted">Hiển thị 1 đến 5 của 5 mục</div>
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Trước</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Tiếp</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Liên kết Bootstrap JS (tùy chọn) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
